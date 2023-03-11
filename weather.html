@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>weather today</title>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Signika+Negative&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../weather/weather.css">
+        <style>
+            body {
+                font-family: 'IBM Plex Sans', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+         <div class="top">
+         <div class="topleft">
+            <h2>Weather App</h4>
+            <h3>Home</h3>
+            <h3>About this App</h3>
+            <h3>Usage Guide</h3>
+            <h3>FAQ</h3>
+         </div>
+         <div class="topright">
+            <input type="text" placeholder="enter city name" id="city">
+            <button id="submit">Submit</button>
+         </div>
+         </div>
+         <h1 class="heading1">Weather for <span id="cityName" style="margin-top: -3px; margin-left: 8px;"></span></h1>
+         <div class="container">
+            <div class="cont1">
+                <span>Temperature</span>
+                <ul>
+                    <li>Temperature in farenheit is <span id="temp_f"></span></li>
+                    <li>Temperature in celsius is <span id="temp_c"></span></li>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    
+                    <button class="info" style="margin-left: 60px">Temp info</button
+                </ul>
+                
+            </div>
+            <div class="cont2">
+                <span>Weather</span>
+                <ul>
+                    <li>humidity is <span id="humidity"></span></li>
+                    <li>clouds are <span id="cloud"></span></li>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    
+                    <button class="info" style="margin-left: 60px">Humidity info</button>
+                </ul>
+                
+            </div>
+            <div class="cont3">
+                <span>Wind</span>
+                <ul>
+                    <li>wind direction is <span id="wind_dir"></span></li>
+                    <li>wind degree is <span id="wind_degree"></span></li>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    
+                    
+                    <button class="info" style="margin-left: 60px">Wind info</button>
+                </ul>
+                
+            </div>
+         </div>
+
+
+    <script src="./weather.js"></script>
+    </body>
+</html>
